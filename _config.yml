@@ -18,7 +18,7 @@ email: zhaol@hawaii.edu
 description: > # this means to ignore newlines until "baseurl:"
   Course material for University of Hawaii at Manoa's EE491F - Data
   Driven Web Development
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ee491f" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
