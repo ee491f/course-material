@@ -1,1 +1,12 @@
-
+!!! 5
+%html
+  %head
+    %meta{charset: 'utf-8'}
+    %title {{ page.title | default: site.title }}
+    %meta{name: 'description',
+      content: '{{ site.description | escape }}'}
+    %meta{name: 'keywords',
+      content: '{{ page.title | default: site.title }}'}
+  %body
+    {% haml header.haml %}
+    {{ content }}

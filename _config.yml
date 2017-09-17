@@ -33,3 +33,7 @@ exclude:
   - docker
   - scripts
 destination: docs
+
+defaults:
+  - values:
+      layout: default
