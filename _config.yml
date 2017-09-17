@@ -31,4 +31,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Dockerfile
+  - bootstrap.sh
+  - docker
+  - scripts
 destination: docs
