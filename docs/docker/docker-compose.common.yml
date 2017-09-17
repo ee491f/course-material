@@ -1,0 +1,10 @@
+version: '2'
+services:
+  app:
+    build: ..
+    command:
+      - scripts/start_app.sh
+    ports:
+      - "4000"
+    env_file:
+      - development.env
