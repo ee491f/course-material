@@ -1,4 +1,48 @@
-%nav.nav.flex-column
-  %a.nav-link {{ site.title }}
-  %a.nav-link Version Control System
-  %a.nav-link Containers
+.sidebar
+  %nav#menu.nav.navbar.nav-pills.navbar-light.bg-light
+    %a.navbar-brand{href: '/'} {{ site.title }}
+    %ul
+      %li.nav-item
+        %a.nav-link{href: '#project'} Project
+        %ul
+          %li
+            %a.nav-link{href: '#requirements'} Requirements
+          %li
+            %a.nav-link{href: '#rubric'} Rubric
+      %li.nav-item
+        %a.nav-link{href: '#version-control-system'} Version Control System
+        %ul
+          %li
+            %a.nav-link{href: '#git'} Git
+          %li
+            %a.nav-link{href: '#github'} GitHub
+      %li.nav-item
+        %a.nav-link{href: '#containers'} Containers
+        %ul
+          %li
+            %a.nav-link{href: '#docker'} Docker
+          %li
+            %a.nav-link{href: '#docker-compose'} Docker-Compose
+      %li.nav-item
+        %a.nav-link{href: '#front-end'} Front End
+        %ul
+          %li
+            %a.nav-link{href: '#html'} HTML
+          %li
+            %a.nav-link{href: '#css'} CSS
+          %li
+            %a.nav-link{href: '#javascript'} JavaScript
+      %li.nav-item
+        %a.nav-link{href: '#back-end'} Back End
+        %ul
+          %li
+            %a.nav-link{href: '#python'} Python
+          %li
+            %a.nav-link{href: '#django'} Django
+          %li
+            %a.nav-link{href: '#postgresql'} PostgreSQL
+      %li.nav-item
+        %a.nav-link{href: '#production'} Production
+        %ul
+          %li
+            %a.nav-link{href: '#heroku'} Heroku
