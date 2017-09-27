@@ -17,9 +17,9 @@
   %body{data: {spy: 'scroll', target: '#menu'}}
     .container-fluid
       .row
-        .col-2.bg-light
+        .col-2.bg-light.d-none.d-sm-block.col-md-3
           {% haml menu.haml %}
-        .col-10
+        .col-10.col-md-9
           {{ content }}
     %script{src: "https://code.jquery.com/jquery-3.2.1.slim.min.js",
       integrity: "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN",
