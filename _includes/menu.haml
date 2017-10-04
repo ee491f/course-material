@@ -1,10 +1,10 @@
 .sidebar
   %nav#menu.nav.navbar.flex-column.nav-pills.navbar-light
     %a.navbar-brand.wrap{href: '/'} EE491F
-    %ul
+    %ul.vertical.menu.drilldown{data: {drilldown: true}}
       %li.nav-item
         %a.nav-link{href: '#project'} Project
-        %ul
+        %ul.vertical.menu.nested
           %li
             %a.nav-link{href: '#requirements'} Requirements
           %li
