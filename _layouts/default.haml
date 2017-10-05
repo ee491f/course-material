@@ -15,7 +15,7 @@
     %link{rel: 'stylesheet', href: 'assets/css/app.css'}
   %body.grid-container.fluid
     .grid-x
-      .cell.shrink
+      .cell.small-2{data: {sticky: {container: true}}}
         {% haml menu.haml %}
       .cell.auto
         {{ content }}
