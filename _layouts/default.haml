@@ -16,7 +16,8 @@
   %body.grid-container.fluid
     .grid-x
       .cell.small-2{data: {sticky: {container: true}}}
-        {% haml menu.haml %}
+        .sidebar{data: {sticky: true}}
+          {% haml menu.haml %}
       .cell.auto
         {{ content }}
     %script{src: "https://code.jquery.com/jquery-3.2.1.slim.min.js",
