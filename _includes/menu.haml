@@ -1,48 +1,47 @@
-.sidebar
-  %nav#menu.nav.navbar.flex-column.nav-pills.navbar-light
-    %a.navbar-brand.wrap{href: '/'} EE491F
-    %ul.vertical.menu.drilldown{data: {drilldown: true}}
-      %li.nav-item
-        %a.nav-link{href: '#project'} Project
-        %ul.vertical.menu.nested
-          %li
-            %a.nav-link{href: '#requirements'} Requirements
-          %li
-            %a.nav-link{href: '#rubric'} Rubric
-      %li.nav-item
-        %a.nav-link{href: '#version-control-system'} Version Control System
-        %ul
-          %li
-            %a.nav-link{href: '#git'} Git
-          %li
-            %a.nav-link{href: '#github'} GitHub
-      %li.nav-item
-        %a.nav-link{href: '#containers'} Containers
-        %ul
-          %li
-            %a.nav-link{href: '#docker'} Docker
-          %li
-            %a.nav-link{href: '#docker-compose'} Docker-Compose
-      %li.nav-item
-        %a.nav-link{href: '#front-end'} Front End
-        %ul
-          %li
-            %a.nav-link{href: '#html'} HTML
-          %li
-            %a.nav-link{href: '#css'} CSS
-          %li
-            %a.nav-link{href: '#javascript'} JavaScript
-      %li.nav-item
-        %a.nav-link{href: '#back-end'} Back End
-        %ul
-          %li
-            %a.nav-link{href: '#python'} Python
-          %li
-            %a.nav-link{href: '#django'} Django
-          %li
-            %a.nav-link{href: '#postgresql'} PostgreSQL
-      %li.nav-item
-        %a.nav-link{href: '#production'} Production
-        %ul
-          %li
-            %a.nav-link{href: '#heroku'} Heroku
+%nav
+  %a{href: '/'} EE491F
+  %ul.vertical.menu{data: {drilldown: true}}
+    %li
+      %a{href: '#project'} Project
+      %ul.menu.vertical.nested
+        %li
+          %a{href: '#requirements'} Requirements
+        %li
+          %a{href: '#rubric'} Rubric
+    %li
+      %a{href: '#version-control-system'} Version Control System
+      %ul.menu.vertical.nested
+        %li
+          %a{href: '#git'} Git
+        %li
+          %a{href: '#github'} GitHub
+    %li
+      %a{href: '#containers'} Containers
+      %ul.menu.vertical.nested
+        %li
+          %a{href: '#docker'} Docker
+        %li
+          %a{href: '#docker-compose'} Docker-Compose
+    %li
+      %a{href: '#front-end'} Front End
+      %ul.menu.vertical.nested
+        %li
+          %a{href: '#html'} HTML
+        %li
+          %a{href: '#css'} CSS
+        %li
+          %a{href: '#javascript'} JavaScript
+    %li
+      %a{href: '#back-end'} Back End
+      %ul.menu.vertical.nested
+        %li
+          %a{href: '#python'} Python
+        %li
+          %a{href: '#django'} Django
+        %li
+          %a{href: '#postgresql'} PostgreSQL
+    %li
+      %a{href: '#production'} Production
+      %ul.menu.vertical.nested
+        %li
+          %a{href: '#heroku'} Heroku
