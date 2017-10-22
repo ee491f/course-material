@@ -1,1 +1,20 @@
-
+.sidebar {
+  padding-left: 0.9375rem;
+  .drilldown, nav {
+    a {
+      color: #fff;
+      background-color: #868e96;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .is-drilldown-submenu {
+      background-color: #868e96;
+    }
+    .is-drilldown-submenu-parent a {
+      &::before, &::after { // triangle arrows
+        border-color: transparent white transparent white;
+      }
+    }
+  }
+}
