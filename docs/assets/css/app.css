@@ -1,5 +1,7 @@
 .main { padding-left: 0.9375rem; }
 
+caption { text-align: center; caption-side: top; }
+
 .sidebar { padding-left: 0.9375rem; }
 .sidebar .drilldown a, .sidebar nav a { color: white; background-color: #868e96; }
 .sidebar .drilldown a:hover, .sidebar nav a:hover { color: white; }
