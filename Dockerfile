@@ -1,4 +1,4 @@
-FROM ruby:2.4.1
+FROM ruby:2.5.0
 
 RUN apt-get update && apt-get install -qq -y \
   shellcheck
