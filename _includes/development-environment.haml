@@ -1,0 +1,49 @@
+%section#development-environment{data: {magellan: {target: 'development-environment'}}}
+  %h2 Development Environment
+  %p
+    A&nbsp;
+    %a{href: 'https://en.wikipedia.org/wiki/Deployment_environment#Development'} development environment
+    &nbsp;is where we will be developing (i.e. building) our project. For this course, your development environment will, at a minimum, require&nbsp;
+    %a{href: '#git'} Git
+    &nbsp;and&nbsp;
+    = succeed '.&nbsp;' do
+      %a{href: '#containers'} Docker containers
+    Other requirements will be added depending on your project.
+  %p 
+    %a{href: '#git'} Git
+    &nbsp;is how we manage our application's code, which controls our application.&nbsp;
+    %a{href: '#containers'} Docker containers
+    &nbsp;is how we manage our application's dependencies, e.g. libraries, operating system packages, and other environment requirements.&nbsp;
+    With these two tools, we can control our application and its environment. Being able to control your application and its environment allows any developer, teammate, or instructor to pull up your project on their own development environment. This can be useful if you need help troubleshooting or to get feedback on a feature you are developing. Having the application and its environment controlled avoids the age-old problem of "
+    = succeed '".' do
+      %a{href: 'https://www.leadingagile.com/2017/03/works-on-my-machine/'} it works on my machine
+  %p
+    %a{href: '#git'} Git
+    &nbsp;can be installed on any operating system, but&nbsp;
+    %a{href: '#containers'} docker containers
+    &nbsp;has more support for Linux based operating systems.&nbsp;
+    %a{href: 'https://www.hanselman.com/blog/DockerAndLinuxContainersOnWindowsWithOrWithoutHyperVVirtualMachines.aspx'} Windows support
+    &nbsp;is growing, but until containers on Windows and Linux works seamlessly together, this course will use Linux containers for grading.
+  %h3 Development Environment Recommendations
+  %p You can set up your development environment anyway you choose as long as it supports Git and containers. If you do not have a preference, then the following recommendations are good starting points:
+  %ul
+    %li
+      %p
+        Linux Operating System: containers will run natively on your machine's operating system. You can use any flavor of Linux that is supported by Docker, but if you have no preference, then the easiest distribution to start learning on is&nbsp;
+        = succeed '.' do
+          %a{href: 'https://www.ubuntu.com/'} Ubuntu
+    %li
+      %p
+        Mac Operating System: containers can run on Apple deskop and laptops with&nbsp;
+        = succeed '.' do
+          %a{href: 'https://www.docker.com/docker-mac'} Docker for Mac
+        &nbsp;This is the setup I work with on a day-to-day basic, so it will be the easiest for me to lend a hand with this setup.
+    %li
+      %p
+        Windows Operating System: there is a&nbsp;
+        %a{href: 'https://www.docker.com/docker-windows'} Docker for Windows
+        , but my experience with it is limited and my initial experiments with it has been disappointing. My recommendation is to install&nbsp;
+        %a{href: 'https://www.ubuntu.com/'} Ubuntu
+        &nbsp;as a virtual machine inside your Windows machine. You can use&nbsp;
+        %a{href: 'https://www.virtualbox.org/wiki/Downloads'} Virtual Box
+        &nbsp;to manage the Ubuntu virtual machine. To summarize, your host machine will be Windows and your guest virtual machine will be Ubuntu.
