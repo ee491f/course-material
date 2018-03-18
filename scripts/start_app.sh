@@ -7,4 +7,4 @@ SRC_DIR=$(cd "$(dirname "$0")"; pwd -P)
 
 bundle exec jekyll serve \
   --host 0.0.0.0 \
-  --config $CONFIG_FILES
+  --config $JEKYLL_CONFIG_FILES
