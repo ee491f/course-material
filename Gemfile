@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
 
-gem "github-pages", '~>179', group: :jekyll_plugins
 gem 'therubyracer'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "github-pages", '~>179'
   gem "jekyll-haml"
 end
 
