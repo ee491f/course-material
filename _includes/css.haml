@@ -1,2 +1,21 @@
 %section#css{data: {magellan: {target: 'css'}}}
   %h2 CSS
+  %p
+    %a{href: 'https://www.w3schools.com/Css/css_intro.asp'} CSS
+    &nbsp;stands for Cascading Style Sheets. We will use CSS to style our web page.
+  %p
+    Learn how to use CSS&nbsp;
+    = succeed '.' do
+      %a{href: 'https://medium.com/@zhao.li'} here
+  -# move to Medium
+    The basic component of CSS are rule-sets. We define a CSS element using this syntax (https://www.w3schools.com/Css/css_syntax.asp):
+    <selector> { <declaration>; }
+    An example basic CSS rule-set would be this:
+      h1 { color: red; }
+
+    CSS selector with id, class, and attribute
+    use id for identifying element
+    use class for grouping element
+    use attribute for extra information on element
+    to learn more about CSS, then just learn to use more CSS selectors: https://www.w3schools.com/cssref/css_selectors.asp
+    and learn more css declarations/properties: https://www.w3schools.com/cssref/default.asp 
