@@ -1,2 +1,35 @@
 %section#javascript{data: {magellan: {target: 'javascript'}}}
   %h2 JavaScript
+  %p
+    We will use&nbsp;
+    %a{href: 'https://www.w3schools.com/jS/default.asp'} JavaScript (JS)
+    &nbsp;to program the behavior of our web page.
+  %p
+    Learn how to use JavaScript&nbsp;
+    = succeed '.' do
+      %a{href: 'https://medium.com/@zhao.li'} here
+  -# move to Medium
+    %p
+      The basic component of JavaScript are statements, just like traditional languages like C and C++. We define a HTML element using values, operators, expressions, keywords, and comments:
+      https://www.w3schools.com/jS/js_statements.asp
+    %p
+      An example basic JavaScript statement would be this&nbsp;
+      = succeed ':' do
+        %a{href: 'https://www.w3schools.com/jS/js_output.asp'} window.alert("Hello World");
+      %br
+      %code
+        :escaped
+          <h1>This is a header 1</h1>
+    Typically, we will use JavaScript to wait/listen for an event such as the user clicking a button or hovering over a specific region of a web page and then trigger an action or another event such as changing the content or style of an element on the web page.
+    We generally target elements by their id, class, and/or attribute(s) to listen to. And then trigger changes to the same or another target element's class and/or attribute(s).
+
+    For this course, it is recommended that you use a JavaScript library like jQuery and/or BootstrapJS to give you a platform to do more with the web page and its DOM
+    https://jquery.com/
+    https://getbootstrap.com/
+    https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
+    to learn more about jQuery and BootstrapJS, then just learn to use more of their APIs
+    https://api.jquery.com/
+    https://getbootstrap.com/docs/4.1/layout/overview/
+    https://getbootstrap.com/docs/4.1/components/alerts/
+    https://getbootstrap.com/docs/4.1/utilities/borders/
