@@ -3,38 +3,67 @@
   %p
     These exercises will give you an opportunity to add and work with some basic CSS rule-sets. Some exercises are designed to help you understand how to use CSS rule-sets; other exercises will give you a chance to see how you would use the CSS rule-sets to build your project.
   %p
-    First, understand how to include stylesheets inside a HTML document&nbsp;
-    = succeed '.' do
-      %a{href: 'https://medium.com/@zhao.li/'} here
-    -# how to include a css file
-      https://www.w3schools.com/css/css_howto.asp
-      external stylesheets allows you to separate your HTML content from your CSS styling
-
-  %p Then get familiar using these common CSS selectors &amp; declarations/properties:
+    Get familiar using these common CSS&nbsp;
+    %a{href: 'https://www.w3schools.com/cssref/css_selectors.asp'} selectors
+    &nbsp;&amp;&nbsp;
+    = succeed ':' do
+      %a{href: 'https://www.w3schools.com/cssref/default.asp'} properties
   %ol
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} .class
+      %a{href: 'https://www.learn-html.org/en/Classes'} .class
+      %ul
+        %li
+          %a{href: 'https://www.w3schools.com/cssref/sel_class.asp'} more information about CSS classes
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} #id
+      %a{href: 'https://www.w3schools.com/cssref/sel_id.asp'} #id
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} element
+      %a{href: 'https://www.w3schools.com/cssref/sel_element.asp'} element
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} ancestor_element descendent_element
+      %a{href: 'https://www.w3schools.com/cssref/sel_attribute.asp'} [attribute]
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} parent_element &gt; child_element
+      %a{href: 'https://www.w3schools.com/cssref/sel_attribute_value.asp'} [attribute=value]
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} element1, element2
+      %a{href: 'https://www.w3schools.com/cssref/sel_element_element.asp'} ancestor_selector descendent_selector
+      %ul
+        %li
+          ancestor_selector and descendent_selector can be any selector, such as .class, #id, element, or attribute
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} [attribute]
+      %a{href: 'https://www.w3schools.com/cssref/sel_element_gt.asp'} parent_selector &gt; child_selector
+      %ul
+        %li
+          parent_selector and child_selector can be any selector, such as .class, #id, element, or attribute
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} [attribute=value]
+      %a{href: 'https://www.w3schools.com/cssref/sel_element_comma.asp'} selector1, selector2
+      %ul
+        %li
+          selector1 and selector2 can be any selector, such as .class, #id, element, or attribute
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} color
+      %a{href: 'https://css-tricks.com/multiple-class-id-selectors/#article-header-id-0'} .compounding[selectors]
+      %ul
+        %li
+          be aware of&nbsp;
+          %a{href: 'https://www.w3schools.com/css/css_specificity.asp'} CSS specificity
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} border
+      selecting exercises
+      %ul
+        %li
+          %a{href: 'https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators1'} exercise 1
+        %li
+          %a{href: 'https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators2'} exercise 2
+        %li
+          %a{href: 'https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators3'} exercise 3
+        %li
+          %a{href: 'https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4'} exercise 4
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} margin
+      %a{href: 'https://www.w3schools.com/cssref/pr_text_color.asp'} color
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} padding
+      %a{href: 'https://www.w3schools.com/cssref/css3_pr_background.asp'} background
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} background
+      %a{href: 'https://www.w3schools.com/css/css_boxmodel.asp'} box model
+      %ul
+        %li
+          %a{href: 'https://www.w3schools.com/cssref/pr_border.asp'} border
+        %li
+          %a{href: 'https://www.w3schools.com/cssref/pr_margin.asp'} margin
+        %li
+          %a{href: 'https://www.w3schools.com/cssref/pr_padding.asp'} padding
