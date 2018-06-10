@@ -4,28 +4,44 @@
     %a{href: 'https://www.w3schools.com/html/html_intro.asp'} HTML
     &nbsp;stands for Hyper Text Markup Language. We will use HTML to define the contents of our web page.
   %p
-    Learn how to use HTML&nbsp;
+    To get started with your first HTML page, read&nbsp;
     = succeed '.' do
-      %a{href: 'https://medium.com/@zhao.li'} here
-  -# move to Medium
-    %p
-      The basic component of HTML are elements. We define a HTML element using this&nbsp;
-      = succeed ':' do
-        %a{href: 'https://en.wikipedia.org/wiki/HTML_element#Syntax'} syntax
-      %br
-      %code
-        :escaped
-          <tagname>tag content</tagname>
-    %p
-      An example basic HTML element would be this&nbsp;
-      = succeed ':' do
-        %a{href: 'https://www.w3schools.com/tags/tag_hn.asp'} header 1
-      %br
-      %code
-        :escaped
-          <h1>This is a header 1</h1>
-    HTML with id, class, and attribute
-    use id for identifying element
-    use class for grouping element
-    use attribute for extra information on element
-    to learn more about HTML, then just learn to use more HTML tags: https://www.w3schools.com/tags/default.asp
+      %a{href: 'https://medium.com/@zhao.li/'} this
+    -# how to setup a html file and open it in the browser
+      !DOCTYPE
+      html
+      head
+      title
+      body
+      comment
+  %p
+    To add more to your first HTML page, read&nbsp;
+    = succeed '.' do
+      %a{href: 'https://medium.com/@zhao.li'} this
+    -# move to Medium
+      %p
+        The basic component of HTML are elements. We define a HTML element using this&nbsp;
+        = succeed ':' do
+          %a{href: 'https://en.wikipedia.org/wiki/HTML_element#Syntax'} syntax
+        %br
+        %code
+          :escaped
+            <tagname>tag content</tagname>
+      %p
+        An example basic HTML element would be this&nbsp;
+        = succeed ':' do
+          %a{href: 'https://www.w3schools.com/tags/tag_hn.asp'} header 1
+        %br
+        %code
+          :escaped
+            <h1>This is a header 1</h1>
+      HTML with id, class, and attribute
+      use id for identifying element
+      use class for grouping element
+      use attribute for extra information on element
+      to learn more about HTML, then just learn to use more HTML tags: https://www.w3schools.com/tags/default.asp
+  %p
+    To learn more about HTML, then just learn to use more HTML tags, like the ones listed&nbsp;
+    = succeed '.' do
+      %a{href: 'https://www.w3schools.com/tags/default.asp'} here
+
