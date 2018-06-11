@@ -2,90 +2,187 @@
   %h2 JavaScript Exercises
   %p
     These exercises will give you an opportunity to add and work with some basic JavaScript. Some exercises are designed to help you understand how to use JavaScript; other exercises will give you a chance to see how you would use the JavaScript to build your project.
-  %p
-    First, understand how JavaScript is injected into a HTML document&nbsp;
-    = succeed '.' do
-      %a{href: 'https://medium.com/@zhao.li/'} here
-    -# how to include JavaScript into a html file and open it in the browser
-      script tag
-      best practice is to separate the JavaScript code from the HTML to keep things readable and maintable
-      https://www.w3schools.com/jS/js_whereto.asp
-
-  %p Then get familiar using these common jQuery/Bootstrap features:
+  %p Get familiar using these common jQuery/Bootstrap features/concepts:
   %ol
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} Targeting/Finding
-      -# https://api.jquery.com/category/selectors/
+      %a{href: 'https://www.w3schools.com/jquery/jquery_ref_selectors.asp'} Selecting elements to operate on
+      %ul
+        %li The syntax is very similar to CSS selectors
+        %li
+          %a{href: 'https://api.jquery.com/category/selectors/'} JQuery's list of selectors
+        %li
+          %a{href: 'https://api.jquery.com/category/traversing/'} JQuery's list of traversing methods
+        %li
+          Be familiar with&nbsp;
+          %code #id
+          ,&nbsp;
+          %code .class
+          ,&nbsp;
+          %code element
+          ,&nbsp;
+          %code [attribute]
+          ,&nbsp;
+          %code [attribute=value]
+          ,&nbsp;
+          ancestor/descendent, parent/child, multiple selectors, combinators, and compounding.
+        %li
+          Also familiarize yourself with&nbsp;
+          %code .add()
+          ,&nbsp;
+          %code .children()
+          ,&nbsp;
+          %code .each()
+          ,&nbsp;
+          %code .filter()
+          ,&nbsp;
+          %code .find()
+          ,&nbsp;
+          %code .first()
+          ,&nbsp;
+          %code .last()
+          ,&nbsp;
+          %code .has()
+          ,&nbsp;
+          %code .not()
+          ,&nbsp;
+          %code .parent()
+          ,&nbsp;
+          %code .parents()
+          ,&nbsp;
+          %code .siblings()
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} Events
-      -# https://api.jquery.com/category/events/
-        .bind()
-        .unbind()
-        .click()
-        .live()
-        .die()
-        .hover()
-        .on()
-        .off()
-        .toggle()
-        .change()
+      %a{href: 'https://www.w3schools.com/jquery/jquery_ref_events.asp'} Handling events
+      %ul
+        %li
+          %a{href: 'https://learn.jquery.com/events/event-basics/'} More on events
+        %li
+          %a{href: 'https://api.jquery.com/category/events/'} JQuery's list of events
+        %li
+          %a{href: 'https://api.jquery.com/category/forms/'} JQuery's list of form events
+        %li
+          Be familiar with&nbsp;
+          %code
+            %a{href: 'https://www.w3schools.com/jquery/event_click.asp'} .click()
+          ,&nbsp;
+          %code
+            %a{href: 'https://www.w3schools.com/jquery/event_hover.asp'} .hover()
+          ,&nbsp;
+          %code
+            %a{href: 'https://www.w3schools.com/jquery/event_on.asp'} .on()
+          ,&nbsp;
+          %code
+            %a{href: 'https://www.w3schools.com/jquery/event_off.asp'} .off()
+          ,&nbsp;
+          %code 
+            %a{href: 'https://www.w3schools.com/jquery/event_change.asp'} .change()
+          ,&nbsp;
+          %code
+            %a{href: 'https://api.jquery.com/blur/'} .blur()
+          ,&nbsp;
+          %code
+            %a{href: 'https://api.jquery.com/focus/'} .focus()
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} Actions
-      -# https://api.jquery.com/category/attributes/
-        .hasClass()
-        .addClass()
-        .removeClass()
-        .attr()
-        .toggleClass()
-      -# https://api.jquery.com/category/css/
-        .css()
-      -# https://api.jquery.com/category/manipulation/
-        .after()
-        .before()
-        .append()
-        .appendTo()
-        .prepend()
-        .prependTo()
-        .remove()
-        .replaceAll()
-        .replaceWith()
-      -# https://api.jquery.com/category/effects/
-        .fadeIn()
-        .fadeOut()
-        .fadeToggle()
-        .hide()
-        .show()
-        .toggle()
-        .slideUp()
-        .slideDown()
-        .slideToggle()
-      -# https://api.jquery.com/category/forms/
-        .blur()
-        .focus()
+      Triggering Actions
+      %p Actions can be:
+      %ul
+        %li
+          %a{href: 'https://www.w3schools.com/jquery/jquery_ref_effects.asp'} Displaying Effects
+          %ul
+            %li
+              %a{href: 'https://api.jquery.com/category/effects/'} JQuery's list of effects
+            %li
+              Be familiar with&nbsp;
+              %code
+                %a{href: 'https://www.w3schools.com/jquery/eff_fadein.asp'} .fadeIn()
+              ,&nbsp;
+              %code
+                %a{href: 'https://www.w3schools.com/jquery/eff_fadeout.asp'} .fadeOut()
+              ,&nbsp;
+              %code
+                %a{href: 'https://www.w3schools.com/jquery/eff_fadetoggle.asp'} .fadeToggle()
+              ,&nbsp;
+              %code
+                %a{href: 'https://www.w3schools.com/jquery/eff_hide.asp'} .hide()
+              ,&nbsp;
+              %code
+                %a{href: 'https://www.w3schools.com/jquery/eff_show.asp'} .show()
+              ,&nbsp;
+              %code
+                %a{href: 'https://www.w3schools.com/jquery/eff_toggle.asp'} .toggle()
+              ,&nbsp;
+              %code
+                %a{href: 'https://www.w3schools.com/jquery/eff_slideup.asp'} .slideUp()
+              ,&nbsp;
+              %code
+                %a{href: 'https://www.w3schools.com/jquery/eff_slidedown.asp'} .slideDown()
+              ,&nbsp;
+              %code
+                %a{href: 'https://www.w3schools.com/jquery/eff_slidetoggle.asp'} .slideToggle()
+        %li
+          %a{href: 'https://www.w3schools.com/jquery/jquery_ref_html.asp'} Interacting with the DOM (aka HTML elements and their CSS properties)
+          %ul
+            %li
+              %a{href: 'https://api.jquery.com/category/attributes/'} By Attributes
+              %ul
+                %li
+                  Be familiar with&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_hasclass.asp'} .hasClass()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_addclass.asp'} .addClass()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_removeclass.asp'} .removeClass()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_toggleclass.asp'} .toggleClass()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_attr.asp'} .attr()
+            %li
+              %a{href: 'https://api.jquery.com/category/css/'} By CSS
+              %ul
+                %li
+                  Be familiar with&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/css_css.asp'} .css()
+            %li
+              %a{href: 'https://api.jquery.com/category/manipulation/'} By HTML
+              %ul
+                %li
+                  Be familiar with&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_after.asp'} .after()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_before.asp'} .before()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_append.asp'} .append()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_appendto.asp'} .appendTo()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_prepend.asp'} .prepend()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_prependto.asp'} .prependTo()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_remove.asp'} .remove()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_replaceall.asp'} .replaceAll()
+                  ,&nbsp;
+                  %code
+                    %a{href: 'https://www.w3schools.com/jquery/html_replacewith.asp'} .replaceWith()
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} Traversing
-      -# https://api.jquery.com/category/traversing/
-        .add()
-        .children()
-        .each()
-        .filter()
-        .find()
-        .first()
-        .last()
-        .has()
-        .not()
-        .parent()
-        .parents()
-        .siblings()
+      %a{href: 'https://getbootstrap.com/docs/4.1/layout/grid/'} Add some content using Bootstrap's layout, container, &amp; grid system
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} Layout, Container, &amp; Grid
-      -# https://getbootstrap.com/docs/4.1/layout/overview/
+      %a{href: 'https://getbootstrap.com/docs/4.1/components/alerts/'} Style some text with Bootstrap alerts
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} Alerts
-      -# https://getbootstrap.com/docs/4.1/components/alerts/
+      %a{href: 'https://getbootstrap.com/docs/4.1/components/navbar/'} Add a Bootstrap NavBar
     %li
-      %a{href: 'https://medium.com/@zhao.li/'} NavBar
-      -# https://getbootstrap.com/docs/4.1/components/navbar/
-    %li
-      %a{href: 'https://medium.com/@zhao.li/'} Borders
-      -# https://getbootstrap.com/docs/4.1/utilities/borders/
+      %a{href: 'https://getbootstrap.com/docs/4.1/utilities/borders/'} Style some HTML element with Bootstrap borders
