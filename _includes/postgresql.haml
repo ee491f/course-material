@@ -1,2 +1,21 @@
 %section#postgresql{data: {magellan: {target: 'postgresql'}}}
   %h2 PostgreSQL
+  %p
+    %a{href: 'https://www.postgresql.org/'} PostgreSQL
+    &nbsp;is a database.&nbsp;
+    %a{href: 'https://en.wikipedia.org/wiki/Database'} Databases
+    &nbsp;are software used to store, access, and interact with data.&nbsp;
+    A&nbsp;
+    %a{href: 'https://en.wikipedia.org/wiki/Query_language'} query language
+    &nbsp;is the language/syntax used to interact with the data inside a database.&nbsp;
+    The PostgreSQL database supports the&nbsp;
+    = succeed '.' do
+      %a{href: 'https://en.wikipedia.org/wiki/SQL'} structured query language
+  %p
+    For these exercises, we will play around with PosgreSQL using SQL. However, your web application will use an&nbsp;
+    %a{href: 'https://en.wikipedia.org/wiki/Object-relational_mapping'} object relational mapping
+    &nbsp;library to interact with the PostgreSQL database. Django's ORM library is the engine that allows you to interact with the database thru Django's&nbsp;
+    %a{href: 'https://docs.djangoproject.com/en/2.0/topics/db/'} models
+    &nbsp;and&nbsp;
+    = succeed '.' do
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/'} QuerySets
