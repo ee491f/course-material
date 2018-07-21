@@ -1,0 +1,16 @@
+%section#going-further{data: {magellan: {target: 'going-further'}}}
+  %h2 Going Further
+  %h3 Databases
+    %p
+      Please be aware that data can also be stored in regular files on the filesystem or in other types of databases, such as&nbsp;
+      %a{href: 'https://en.wikipedia.org/wiki/Document-oriented_database'} document databases
+      &nbsp;and&nbsp;
+      = succeed ', ' do
+        %a{href: 'https://en.wikipedia.org/wiki/Graph_database'} graph databases
+      which are often referred to as&nbsp;
+      = succeed '.' do
+        %a{href: 'https://en.wikipedia.org/wiki/NoSQL'} NoSQL databases
+      -#
+        sql databases models data as tables with columns and rows, hence "structured"
+        document databases models data as individual documents, often times like singular events such as whenever sensor reading is taken
+        graph databases models data as graphs (aka trees). these databases are often used when relationships are important
