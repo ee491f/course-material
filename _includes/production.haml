@@ -1,2 +1,13 @@
 %section#production{data: {magellan: {target: 'production'}}}
   %h2 Production
+  %p
+    Thus far, we have developed and used things that are only accessible by us on our own development machine. At some point, in order for other users to utilize what you have built, you need to&nbsp;
+    %a{href: 'https://en.wikipedia.org/wiki/Software_deployment'} deploy
+    &nbsp;your application to a&nbsp;
+    %a{href: 'https://en.wikipedia.org/wiki/Deployment_environment#Production'} production environment
+    &nbsp;for others to access. The web is a great way to distribute your application to others and the simple web applications you've made can be deployed to web servers for anyone with Internet access to access.
+  %p
+    There is a whole field dedicated to taking an application to production. It is called&nbsp;
+    = succeed '.' do
+      %a{href: 'https://en.wikipedia.org/wiki/DevOps'} developer operations (devops)
+  %p The focus of this course is developing an application, not deploying one. But it is extremely gratifying to see your application deployed and see how the code that you write can eventually be used by anyone. So to keep you focused on developing your application, but still give you the benefit of seeing your application deployed, we will use a service to help deploy your application.
