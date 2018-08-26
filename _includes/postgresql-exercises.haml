@@ -1,0 +1,49 @@
+%section#postgresql-exercises{data: {magellan: {target: 'postgresql-exercises'}}}
+  %h2 PostgreSQL Exercises
+  %p
+    For these exercises, we will play around with PosgreSQL using SQL and Python. People who work primarily with databases (aka database administrators) will normally use SQL, but (web) application developers will normally use an&nbsp;
+    %a{href: 'https://en.wikipedia.org/wiki/Object-relational_mapping'} object relational mapping
+    &nbsp;library to interact with the PostgreSQL database. ORMs allow developers to work with a database using the application's programming language (e.g. Python in our case).
+  %p
+    Django's ORM library is the engine/library that allows you and your application to interact with the database thru Django's&nbsp;
+    %a{href: 'https://docs.djangoproject.com/en/2.0/topics/db/'} models
+    &nbsp;and&nbsp;
+    = succeed '. ' do
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/'} QuerySets
+    Django's ORM will translate your application Python code into SQL commands that PostgreSQL will understand.
+
+  %p
+    Follow the postrgreSQL tutorials&nbsp;
+    = succeed ' ' do
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-sql.html'} here
+    to learn how to:
+  %ul
+    %li
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-table.html'} create a table
+    %li
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-populate.html'} add data to a table (aka insert)
+    %li
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-select.html'} search a table for data (aka query, select)
+    %li
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-update.html'} update data in a table
+    %li
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-delete.html'} delete data in a table
+    %li
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-join.html'} join data across tables
+
+  %p
+    Follow this Django tutorial&nbsp;
+    = succeed ' ' do
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-sql.html'} here
+    to learn how to:
+  %ul
+    %li
+      %a{href: 'https://tutorial.djangogirls.org/en/django_models/#creating-a-blog-post-model'} creata a model
+    %li
+      %a{href: 'https://tutorial.djangogirls.org/en/django_models/#create-tables-for-models-in-your-database'} create/run migrations to support a model
+    %li
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#all-objects'} use a model to fetch data
+    %li
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#create-object'} use a model to create data
+    %li
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#chaining-querysets'} use a model to do a more advanced search on the data
