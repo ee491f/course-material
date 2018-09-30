@@ -1,4 +1,6 @@
 # EE491F Data Driven Web Development
+[EE491F Course Webpage](https://zhaol.github.io/ee491f/ "EE491F Course Webpage")
+
 
 Getting Started
 ---------------
