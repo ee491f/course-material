@@ -1,30 +1,5 @@
 %section#docker-compose-exercises{data: {magellan: {target: 'docker-compose-exercises'}}}
   %h2 Docker-Compose Exercises
-  %p
-    These exercises will explain the fundamentals of using Docker-Compose. Some exercises are designed to help you understand how the tool works; other exercises will give you a chance to see how you would use the tool to build your project. Docker-Compose wraps around Docker so everything docker-compose is doing, you can do the same thing manually with docker and its associated&nbsp;
-    = succeed '.' do
-      %a{href: 'https://docs.docker.com/engine/reference/commandline/docker/'} command line arguments
-    &nbsp;Using docker-compose is a bit easier and requires less typing, but there will be times when you might need to dive deeper into docker and the capabilities docker provides, which might not be provided by docker-compose. You can learn those docker commands as it is needed when you are troubleshooting.
-  %p For the purposes of this course, we will interact mainly with docker-compose.
-  %p Get familiar using these basic commands:
-  %ol
-    %li
-      %a{href: 'https://medium.com/@zhao.li://medium.com/@zhao.li/how-to-understand-pulling-images-with-docker-compose-236e323e541'} docker-compose pull
-    %li
-      %a{href: 'https://medium.com/@zhao.li://medium.com/@zhao.li/how-to-understand-building-images-with-docker-compose-24cbdbc0641f'} docker-compose build
-    %li
-      %a{href: 'https://medium.com/@zhao.li://medium.com/@zhao.li/how-to-understand-running-containers-with-docker-compose-a8160b487a98'} docker-compose run
-    %li
-      %a{href: 'https://medium.com/@zhao.li://medium.com/@zhao.li/how-to-understand-running-all-containers-using-docker-compose-19cf3061125f'} docker-compose up
-    %li
-      %a{href: 'https://medium.com/@zhao.li://medium.com/@zhao.li/how-to-understand-stopping-all-containers-using-docker-compose-195c75e396cb'} docker-compose down -v
-  %p The above commands will allow you to work with containers on your own machine. This is already hugely beneficial because the application container is isolated from your host machine so you do not have to worry about artifacts from your application spilling out into your development machine (e.g. the host machine) and you do not have to worry about artifacts from your development machine (e.g. the host machine) spilling into your application. You now have full control of your application and its environment.
-  %p The following exercise will demonstrate some of the nuances of using containers.
-  %ul
-    %li
-      %a{href: 'https://medium.com/@zhao.li/how-to-understand-working-with-files-in-containers-using-docker-compose-6d8e68ed790b'} files and volumes
-    %li
-      %a{href: 'https://medium.com/@zhao.li/how-to-understand-working-with-networked-services-in-containers-using-docker-compose-5fcc9fcf062b'} networking
   %p The following exercise will give you a chance to use everything you have learned to allow you to use containers that others have built.
   %ul
     %li
