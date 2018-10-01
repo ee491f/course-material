@@ -2,7 +2,35 @@
   %h2 Docker-Compose
   %p
     %a{href: 'https://docs.docker.com/compose/overview/'} Docker-compose
-    &nbsp;is a tool to help us stitch containers together. It also makes it easier to interact with docker through configuration files. Using just docker alone will require using command line arguments. The benefit of using configuration files over command line arguments is that configuration files can easily be source controlled and shared with other developers.&nbsp;
+    &nbsp;is a tool to help us stitch containers together. It also makes it easier to interact with docker through configuration files. Using just docker alone will require using command line arguments. The benefit of using configuration files over command line arguments is that configuration files can easily be source controlled and shared with other developers as well as being more declarative instead of imperative.&nbsp;
     Please&nbsp;
     %a{href: 'https://docs.docker.com/compose/install/'} install docker-compose
     &nbsp;on your development environment.
+
+  %p
+    Read these tutorials to understand how to use docker-compose:
+  %ol
+    %li
+      %a{href: 'https://medium.com/@zhao.li://medium.com/@zhao.li/how-to-understand-pulling-images-with-docker-compose-236e323e541'} docker-compose pull
+    %li
+      %a{href: 'https://medium.com/@zhao.li://medium.com/@zhao.li/how-to-understand-building-images-with-docker-compose-24cbdbc0641f'} docker-compose build
+    %li
+      %a{href: 'https://medium.com/@zhao.li://medium.com/@zhao.li/how-to-understand-running-containers-with-docker-compose-a8160b487a98'} docker-compose run
+    %li
+      %a{href: 'https://medium.com/@zhao.li://medium.com/@zhao.li/how-to-understand-running-all-containers-using-docker-compose-19cf3061125f'} docker-compose up
+    %li
+      %a{href: 'https://medium.com/@zhao.li/how-to-understand-stopping-all-containers-using-docker-compose-bba3e8b096fe'} docker-compose down
+  %p The above tutorials (and its respective docker-compose commands) will allow you to work with containers on your own machine. This is already hugely beneficial because the application container is isolated from your host machine so you do not have to worry about artifacts from your application spilling out into your development machine (e.g. the host machine) and you do not have to worry about artifacts from your development machine (e.g. the host machine) spilling into your application. You now have full control of your application and its environment.
+  %p
+    Docker-Compose wraps around Docker so everything docker-compose is doing, you can do the same thing manually with docker and its associated&nbsp;
+    = succeed '.' do
+      %a{href: 'https://docs.docker.com/engine/reference/commandline/docker/'} command line arguments
+    &nbsp;Using docker-compose is a bit easier and requires less typing, but there will be times when you might need to dive deeper into docker and the capabilities docker provides, which might not be provided by docker-compose. You can learn those docker commands as it is needed when you are troubleshooting.
+  %p For the purposes of this course, we will interact mainly with docker-compose instead of dealing with Docker directly.
+  %p The following exercise will demonstrate some of the nuances of using containers.
+  %ul
+    %li
+      %a{href: 'https://medium.com/@zhao.li/how-to-understand-working-with-files-in-containers-using-docker-compose-6d8e68ed790b'} files and volumes
+    %li
+      %a{href: 'https://medium.com/@zhao.li/how-to-understand-working-with-networked-services-in-containers-using-docker-compose-5fcc9fcf062b'} networking
+
