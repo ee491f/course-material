@@ -2,7 +2,9 @@
   %h2 Docker-Compose
   %p
     %a{href: 'https://docs.docker.com/compose/overview/'} Docker-compose
-    &nbsp;is a tool to help us stitch containers together. It also makes it easier to interact with docker through configuration files. Using just docker alone will require using command line arguments. The benefit of using configuration files over command line arguments is that configuration files can easily be source controlled and shared with other developers as well as being more declarative instead of imperative.&nbsp;
+    &nbsp;is a tool to help us stitch containers together. It also makes it easier to interact with docker through configuration files. Using just docker alone will require using command line arguments. The benefit of using configuration files over command line arguments is that configuration files can easily be source controlled and shared with other developers as well as being more&nbsp;
+    = succeed '.&nbsp;' do
+      %a{href: 'http://amzotti.github.io/programming%20paradigms/2015/02/13/what-is-the-difference-between-procedural-function-imperative-and-declarative-programming-paradigms/'} declarative instead of imperative
     Please&nbsp;
     %a{href: 'https://docs.docker.com/compose/install/'} install docker-compose
     &nbsp;on your development environment.
