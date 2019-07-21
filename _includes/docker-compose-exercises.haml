@@ -1,0 +1,19 @@
+%section#docker-compose-exercises{data: {magellan: {target: 'docker-compose-exercises'}}}
+  %h2 Docker-Compose Exercises
+  %p The following exercise will give you a chance to practice everything you've learned about containers, Docker, and Docker-Compose.
+  %ul
+    %li
+      Use Docker-Compose to bring up a nginx service and a tomcat service.
+      %ul
+        %li
+          Running&nbsp;
+          %code docker-compose up
+          &nbsp;should bring up both services
+        %li A browser on your development machine should be able to see each service's splash screen
+        %img.w-25.img-thumbnail{:src => '{{site.baseurl}}/{{site.img_path}}/nginx_splash_screen.png'}
+        %img.w-25.img-thumbnail{:src => '{{site.baseurl}}/{{site.img_path}}/tomcat_splash_screen.png'}
+        %li
+          If you are stuck, you can reference this example&nbsp;
+          %code docker-compose.yml
+          &nbsp;that is one possible solution to our exercise:&nbsp;
+          %a{href: 'https://gist.github.com/zhao-li/09c606ce41a55b450e29c8951dec5654'} an example docker-compose.yml
