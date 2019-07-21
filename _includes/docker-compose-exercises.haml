@@ -1,63 +1,19 @@
 %section#docker-compose-exercises{data: {magellan: {target: 'docker-compose-exercises'}}}
   %h2 Docker-Compose Exercises
-  %p The following exercise will give you a chance to use everything you have learned to allow you to use containers that others have built.
+  %p The following exercise will give you a chance to practice everything you've learned about containers, Docker, and Docker-Compose.
   %ul
     %li
-      %a{href: 'https://medium.com/@zhao.li/an-example-django-web-application-with-a-postgresql-database-in-containers-cc29121df310'} Example Django web application with PostgreSQL database
-  %p The following exercise will give you a chance to practice everything you've learned about containers and Docker-Compose to build a simple web app for others to use.
-  %ul
-    %li
-      Create a Hello World Containerized Application to Share with Others
+      Use Docker-Compose to bring up a nginx service and a tomcat service.
       %ul
-        %li make sure others can clone and run docker-compose up (or provide a script to bootstrap your application) to see your web application
-        %li you can base your containerized web application off of the Django and PostgreSQL example application above
         %li
-          aside from using Django, feel free to try these web frameworks out:
-          %ul
-            %li
-              %a{href: 'https://rubyonrails.org/'} Ruby on Rails
-              %ul
-                %li
-                  written in the&nbsp;
-                  %a{href: 'https://www.ruby-lang.org/en/'} Ruby programming language
-                %li
-                  %a{href: 'https://hub.docker.com/_/ruby/'} official container for Ruby
-            %li
-              %a{href: 'http://expressjs.com/'} expressJS
-              %ul
-                %li
-                  written in the&nbsp;
-                  %a{href: 'https://nodejs.org/en/'} Node.js programming language
-                %li
-                  %a{href: 'https://hub.docker.com/_/node/'} official container for Node.js
-            %li
-              %a{href: 'http://spring.io/projects/spring-boot'} Springboot
-              %ul
-                %li
-                  written in the&nbsp;
-                  %a{href: 'https://www.java.com/en/'} Java programming language
-                %li
-                  %a{href: 'https://hub.docker.com/_/java/'} official container for Java
+          Running&nbsp;
+          %code docker-compose up
+          &nbsp;should bring up both services
+        %li A browser on your development machine should be able to see each service's splash screen
+        %img.w-25.img-thumbnail{:src => '{{site.baseurl}}/{{site.img_path}}/nginx_splash_screen.png'}
+        %img.w-25.img-thumbnail{:src => '{{site.baseurl}}/{{site.img_path}}/tomcat_splash_screen.png'}
         %li
-          aside from using PostgreSQL, feel free to try these databases out:
-          %ul
-            %li
-              %a{href: 'https://www.mysql.com/'} MySQL
-              %ul
-                %li
-                  %a{href: 'https://hub.docker.com/_/mysql/'} official container for MySQL
-            %li
-              %a{href: 'https://www.mongodb.com/'} MongoDB
-              %ul
-                %li
-                  %a{href: 'https://hub.docker.com/_/mongo/'} official container for MongoDB
-            %li
-              %a{href: 'https://neo4j.com/'} Neo4j
-              %ul
-                %li
-                  %a{href: 'https://hub.docker.com/_/neo4j/'} official container for Neo4j
-            %li
-              %a{href: 'https://redis.io/'} Redis
-              %ul
-                %li
-                  %a{href: 'https://hub.docker.com/_/redis/'} official container for Redis
+          If you are stuck, you can reference this example&nbsp;
+          %code docker-compose.yml
+          &nbsp;that is one possible solution to our exercise:&nbsp;
+          %a{href: 'https://gist.github.com/zhao-li/09c606ce41a55b450e29c8951dec5654'} an example docker-compose.yml
