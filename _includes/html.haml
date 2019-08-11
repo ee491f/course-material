@@ -5,43 +5,24 @@
     &nbsp;stands for Hyper Text Markup Language. We will use HTML to define the contents of our web page.
   %p
     To get started with your first web page using HTML, read this&nbsp;
+    = succeed '. ' do
+      %a{href: 'https://www.w3schools.com/html/html_editors.asp'} tutorial
+    From the tutorial, you should have a basic understanding of HTML's&nbsp;
     = succeed '.' do
-      %a{href: 'https://medium.com/@zhao.li/'} tutorial
-    -# how to setup a html file and open it in the browser
-      !DOCTYPE
-      html
-      head
-      title
-      body
-      comment
-      explain console
+      %a{href: 'https://en.wikipedia.org/wiki/HTML_element#Syntax'} syntax
+
   %p
-    To add more to your first web page, read this&nbsp;
-    = succeed '.' do
-      %a{href: 'https://medium.com/@zhao.li'} tutorial
-    -# move to Medium
-      %p
-        The basic component of HTML are elements. We define a HTML element using this&nbsp;
-        = succeed ':' do
-          %a{href: 'https://en.wikipedia.org/wiki/HTML_element#Syntax'} syntax
-        %br
-        %code
-          :escaped
-            <tagname>tag content</tagname>
-      %p
-        An example basic HTML element would be this&nbsp;
-        = succeed ':' do
-          %a{href: 'https://www.w3schools.com/tags/tag_hn.asp'} header 1
-        %br
-        %code
-          :escaped
-            <h1>This is a header 1</h1>
-      HTML with id, class, and attribute
-      use id for identifying element
-      use class for grouping element
-      use attribute for extra information on element
-      to learn more about HTML, then just learn to use more HTML tags: https://www.w3schools.com/tags/default.asp
+    To understand how the browser is reading and interpretting your HTML page, you can use a browser's console. Each browser has their own developer console.
+    %ul
+      %li
+        %a{href: 'https://developers.google.com/web/tools/chrome-devtools/dom/'} Chrome
+      %li
+        %a{href: 'https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Open_the_Inspector'} Firefox
+    The browser console is how you can debug and troubleshoot your web page code, much like how you use&nbsp;
+    %code printf
+    &nbsp;statements when you programmed in C.
+
   %p
-    To learn more about HTML, then just learn to use more HTML tags, like the ones listed&nbsp;
+    Getting better at HTML is a matter of learning to use more HTML tags, like the ones listed&nbsp;
     = succeed '.' do
       %a{href: 'https://www.w3schools.com/tags/default.asp'} here
