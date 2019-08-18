@@ -1,33 +1,62 @@
 %section#css{data: {magellan: {target: 'css'}}}
   %h2 CSS
+
   %p
     %a{href: 'https://www.w3schools.com/Css/css_intro.asp'} CSS
-    &nbsp;stands for Cascading Style Sheets. We will use CSS to style our web page.
+    &nbsp;stands for Cascading Style Sheets. We will use CSS to style our web page. More specifically, we will use CSS to style the HTML (aka contents) of a web page.
   %p
-    To add CSS to your first web page, read this&nbsp;
-    = succeed '.' do
-      %a{href: 'https://medium.com/@zhao.li/'} tutorial
-    -# how to include a css file
-      https://www.w3schools.com/css/css_howto.asp
-      external stylesheets allows you to separate your HTML content from your CSS styling
-      explain console
-  %p
-    To add more CSS to your first web page, read this&nbsp;
-    = succeed '.' do
-      %a{href: 'https://medium.com/@zhao.li'} tutorial
-    -# move to Medium
-      The basic component of CSS are rule-sets. We define a CSS element using this syntax (https://www.w3schools.com/Css/css_syntax.asp):
-      <selector> { <declaration>; }
-      An example basic CSS rule-set would be this:
-        h1 { color: red; }
+    To add CSS styling to your first web page, read these tutorials:
+  %ul
+    %li
+      %a{href: 'https://www.w3schools.com/css/css_howto.asp'} how to add CSS styles to a page
+      &nbsp;(external style sheet is the recommended way)
+    %li
+      %a{href: 'https://www.csstutorial.net/css-intro/introductioncss-part1.php'} basic tutorial
+    %li
+      %a{href: 'https://www.w3schools.com/Css/default.asp'} a deeper tutorial
+      &nbsp;(stop after "CSS Specificity")
 
-      CSS selector with id, class, and attribute
-      use id for identifying element
-      use class for grouping element
-      use attribute for extra information on element
-      to learn more about CSS, then just learn to use more CSS selectors: https://www.w3schools.com/cssref/css_selectors.asp
-      and learn more css declarations/properties: https://www.w3schools.com/cssref/default.asp 
   %p
-    To learn more about CSS, then just learn to use more CSS properties, like the ones listed&nbsp;
+    To understand how the browser is reading and interpretting your CSS code, you can use a browser's console. Each browser has their own developer console.
+  %ul
+    %li
+      %a{href: 'https://developers.google.com/web/tools/chrome-devtools/css/'} Chrome
+    %li
+      %a{href: 'https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_and_edit_CSS'} Firefox
+  %p
+    The browser console is how you can debug and troubleshoot your web page code, much like how you use&nbsp;
+    %code printf
+    &nbsp;statements when you programmed in C.
+
+  %p When using CSS, it is helpful to understand these concepts:
+  %ul
+    %li
+      %a{href: 'https://www.w3schools.com/Css/css_syntax.asp'} selectors
+    %li
+      %a{href: 'https://www.w3schools.com/Css/css_specificity.asp'} specificity
+    %li
+      %a{href: 'https://www.w3schools.com/cssref/css_units.asp'} units
+    %li
+      %a{href: 'https://www.w3schools.com/Css/css_boxmodel.asp'} box model
+
+  %p
+    Knowing the basic CSS selectors and properties will get you pretty far. The rest of the available selectors and properties can be learned as you go along and find a need for them. Here are some reference lists of the available&nbsp;
+    %a{href: 'https://www.w3schools.com/cssref/default.asp'} selectors
+    &nbsp;and&nbsp;
     = succeed '.' do
-      %a{href: 'https://www.w3schools.com/cssref/default.asp'} here
+      %a{href: 'https://www.w3schools.com/cssref/css_selectors.asp'} properties
+
+  %p
+    Here are some more advanced CSS features that is fun to play with and add to your toolbox of things you can create with (or at the very least, know that they exist and can be used to solve future problems):
+  %ul
+    %li
+      %a{href: 'https://www.w3schools.com/Css/css3_2dtransforms.asp'} 2D
+      &nbsp;and&nbsp;
+      %a{href: 'https://www.w3schools.com/Css/css3_3dtransforms.asp'} 3D
+      &nbsp;transforms
+    %li
+      %a{href: 'https://www.w3schools.com/Css/css3_transitions.asp'} transitions
+    %li
+      %a{href: 'https://www.w3schools.com/Css/css3_animations.asp'} animations
+    %li
+      %a{href: 'https://www.w3schools.com/Css/css3_flexbox.asp'} flexbox (useful for laying out elements)
