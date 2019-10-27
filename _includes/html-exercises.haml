@@ -32,7 +32,11 @@
       %a{href: 'https://htmldog.com/reference/htmltags/commonattributes/'} class
 
   %p
-    This is a good tutorial on all of the&nbsp;
-    = succeed '.' do
-      %a{href: 'https://www.learn-html.org/en/Basic_Elements'} basic HTML tags and attributes
-
+    If you want to learn more about HTML, take a look at these tutorials:
+    %ul
+      %li
+        %a{href: 'https://www.learn-html.org/en/Basic_Elements'} basic HTML tags and attributes
+      %li
+        %a{href: 'https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started'} Mozilla's HTML Tutorial
+      %li
+        %a{href: 'https://www.learn-html.org/'} Learn HTML &amp; CSS
