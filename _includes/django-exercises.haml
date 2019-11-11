@@ -2,12 +2,37 @@
   %h2 Django Exercises
   %p
     These exercises will give you an opportunity to add and work with some basic Django concepts. Some exercises are designed to help you understand how to use Django; other exercises will give you a chance to see how you would use the Django framework to build your project.
+
   %p
-    Follow the tutorials from part 1 to part 7&nbsp;
-    = succeed ' ' do
+    Update the app from this&nbsp;
+    %a{href: 'https://medium.com/@zhao.li/an-example-django-project-in-containers-cc29121df310'} tutorial
+    &nbsp;by:
+  %ul
+    %li modifying an existing page in the app
+    %li adding a new page to the app
+
+  %p
+    Read the tutorials from part 1 to part 7&nbsp;
+    = succeed '. ' do
       %a{href: 'https://docs.djangoproject.com/en/2.0/intro/'} here
-    to build out your first django web application.
+    Combine the knowledge from this 7-part tutorial with this&nbsp;
+    %a{href: 'https://medium.com/@zhao.li/how-to-start-a-containerized-django-project-cd8160fd700b'} tutorial
+    &nbsp;and this&nbsp;
+    %a{href: 'https://medium.com/@zhao.li/an-example-django-project-in-containers-cc29121df310'} tutorial
+    &nbsp;to build out your new, simple, and basic django web application.
+
   %p
-    Note: You might need to jump ahead to&nbsp;
-    %a{href: '#postgresql'} PostgreSQL
-    &nbsp;at certain times to get more background when the tutorials touches on the database.
+    This new applicaion can be any simple idea you can think of. A simple todo app is the "hello, world" equivalent you saw in C:
+  %ul
+    %li
+      %a{href: 'http://todomvc.com/'} An explanation of the todo app concept (but geared for JavaScript)
+    %li
+      %a{href: 'https://medium.com/fbdevclagos/how-to-build-a-todo-app-with-django-17afdc4a8f8c'} An implementation of a Django todo app that you can reference
+  %p
+    If you already have a project idea in mind, you can start building the basic functionality of that idea for this exercise.
+
+  %p
+    The only requirement for this new application is that the user is able to use the web application to save data, view data, update data, and delete data. These common, basic functionalities are known as&nbsp;
+    = succeed '. ' do
+      %a{href: 'https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'} CRUD
+    It is up to you what kind of data the application works with.
