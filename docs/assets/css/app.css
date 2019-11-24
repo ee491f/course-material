@@ -1,11 +1,1 @@
-.main { padding-left: 0.9375rem; }
-
-caption { text-align: center; caption-side: top; }
-
-.sidebar { padding-left: 0.9375rem; }
-.sidebar .drilldown a, .sidebar nav a { color: white; background-color: #868e96; }
-.sidebar .drilldown a:hover, .sidebar nav a:hover { color: white; }
-.sidebar .drilldown .is-drilldown-submenu, .sidebar nav .is-drilldown-submenu { background-color: #868e96; }
-.sidebar .drilldown .is-drilldown-submenu-parent a::before, .sidebar .drilldown .is-drilldown-submenu-parent a::after, .sidebar nav .is-drilldown-submenu-parent a::before, .sidebar nav .is-drilldown-submenu-parent a::after { border-color: transparent white transparent white; }
-
-.contribute-statement { color: white; font-size: .8125rem; font-style: italic; }
+.main{padding-left:0.9375rem}caption{text-align:center;caption-side:top}.sidebar{padding-left:0.9375rem}.sidebar .drilldown a,.sidebar nav a{color:#fff;background-color:#868e96}.sidebar .drilldown a:hover,.sidebar nav a:hover{color:#fff}.sidebar .drilldown .is-drilldown-submenu,.sidebar nav .is-drilldown-submenu{background-color:#868e96}.sidebar .drilldown .is-drilldown-submenu-parent a::before,.sidebar .drilldown .is-drilldown-submenu-parent a::after,.sidebar nav .is-drilldown-submenu-parent a::before,.sidebar nav .is-drilldown-submenu-parent a::after{border-color:transparent #fff transparent #fff}.contribute-statement{color:#fff;font-size:.8125rem;font-style:italic}
