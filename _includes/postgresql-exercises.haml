@@ -1,7 +1,7 @@
 %section#postgresql-exercises{data: {magellan: {target: 'postgresql-exercises'}}}
   %h2 PostgreSQL Exercises
   %p
-    For these exercises, we will play around with PosgreSQL using SQL and Python. People who work primarily with databases (aka database administrators) will normally use SQL, but (web) application developers will normally use an&nbsp;
+    For these exercises, we will play around with PostgreSQL using SQL and Python. People who work primarily with databases (aka database administrators) will normally use SQL, but (web) application developers will normally use an&nbsp;
     %a{href: 'https://en.wikipedia.org/wiki/Object-relational_mapping'} object relational mapping
     &nbsp;library to interact with the PostgreSQL database. ORMs allow developers to work with a database using the application's programming language (e.g. Python in our case).
   %p
@@ -13,7 +13,7 @@
     Django's ORM will translate your application Python code into SQL commands that PostgreSQL will understand.
 
   %p
-    Follow the postrgreSQL tutorials&nbsp;
+    Follow the PostgreSQL tutorials&nbsp;
     = succeed ' ' do
       %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-sql.html'} here
     to learn how to:
@@ -30,8 +30,13 @@
       %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-delete.html'} delete data in a table
     %li
       %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-join.html'} join data across tables
+  %p
+    You can use the PostgreSQL database in container from this&nbsp;
+    %a{href: 'https://medium.com/analytics-vidhya/getting-started-with-postgresql-using-docker-compose-34d6b808c47c'} tutorial
+    &nbsp;to practice the above commands.
 
   %p
+    Our end-goal is to create Django application so it is best to know how to use a database by leveraging the Django framework.&nbsp;
     Follow this Django tutorial&nbsp;
     = succeed ' ' do
       %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-sql.html'} here
@@ -39,13 +44,29 @@
   %ul
     %li
       %a{href: 'https://tutorial.djangogirls.org/en/django_models/#creating-a-blog-post-model'} creata a model
+      &nbsp;(Section "Creating a blog post model")
     %li
       %a{href: 'https://tutorial.djangogirls.org/en/django_models/#create-tables-for-models-in-your-database'} create/run migrations to support a model
+      &nbsp;(Section "Create tables for models in your database")
     %li
       %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#all-objects'} use a model to fetch data
+      &nbsp;(Section "All objects")
     %li
       %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#create-object'} use a model to create data
+      &nbsp;(Section "Create object")
     %li
-      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#chaining-querysets'} use a model to do a more advanced search on the data
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#filter-objects'} use a model to do a more advanced search on the data
+      &nbsp;(Sections "Filter objects", "Ordering objects", and "Complex queries through method-chaining")
 
-  %p As a note, Django defaults to using the SQLite3 database if it is not configured to use any particular database, like PostgreSQL. But the ORM handles all of that transparently to the developer, so it doesn't really matter which database we're using for this particular exercise as long as we are using the ORM to interact with it.
+  %p
+    You can use the Django application from this&nbsp;
+    %a{href: 'https://medium.com/@zhao.li/an-example-django-project-in-containers-cc29121df310'} tutorial
+    &nbsp;to pratice the above Django model features.&nbsp;
+    As a note, Django defaults to using the SQLite3 database if it is not configured to use any particular database, like PostgreSQL.&nbsp;
+    But the ORM handles all of that transparently to the developer, so it doesn't really matter which database we're using for this particular exercise as long as we are using the ORM to interact with it.
+
+  %p
+    If you still have more time to spare and would like to go beyond the scope of this course, check out this site for more practice:
+  %ul
+    %li
+      %a{href: 'https://pgexercises.com/questions/basic/'} SQL Practice Exercises
