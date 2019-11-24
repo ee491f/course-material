@@ -9,6 +9,11 @@ Getting Started
 4. run bootstrap.sh: `./bootstrap.sh`
 5. start service: `docker-compose up`
 
+Building
+--------
+
+    $ docker-compose run app scripts/build_app.sh
+
 Testing
 -------
 * TBD
