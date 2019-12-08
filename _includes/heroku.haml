@@ -1,8 +1,28 @@
 %section#heroku{data: {magellan: {target: 'heroku'}}}
   %h2 Heroku
   %p
-    %a{href: ''} Heroku
-    &nbsp;is a commercial service that deploys and hosts applications. It is essentially a devops team for hire. We will use Heroku to deploy our application because it is free and easy to use.
+    %a{href: 'https://www.heroku.com/'} Heroku
+    &nbsp;is a commercial service that deploys and&nbsp;
+    %a{href: 'https://stackoverflow.com/questions/43452540/where-are-heroku-apps-hosted-exactly/45229837'} hosts
+    &nbsp;applications. It is essentially a devops team for hire. We will use Heroku to deploy our application because it is free and relatively easy to use.
+
+  %p By using Heroku, you will get a sense for what devops is trying to accomplish, which is to make deploying your application be as simple, automated, and reliable as possible.
 
   %p
-    By using Heroku, you will get a sense for what devops is trying to accomplish, which is to make deploying your application be as simple, automated, and reliable as possible.
+    Heroku is able to deploy web application written in&nbsp;
+    = succeed '.&nbsp;' do
+      %a{href: 'https://devcenter.heroku.com/'} many different languages
+    For our class, we will leverage Heroku's ability to deploy containers to help deploy our containerized application:
+  %ul
+    %li
+      %a{href: 'https://devcenter.heroku.com/articles/container-registry-and-runtime'} how to use Heroku to deploy containers
+
+  %p
+    There are other options for us to use to deploy our Django application, like using Heroku's Python buildpack:
+  %ul
+    %li
+      %a{href: 'https://devcenter.heroku.com/articles/deploying-python'} overview of deploying Django on Heroku
+    %li
+      %a{href: 'https://devcenter.heroku.com/articles/getting-started-with-python'} step-by-step instructions on deploying a Django app on Heroku
+
+  %p There are even more options to deploy applications outside of Heroku, but those are outside the scope of this course. This course arbitrarily chose Heroku because it is free and relatively simple. The course material is written to support using Heroku's container deployment feature because learning to deploy a container will offer more flexibility to the developer in the future. Using Heroku's Python buildpack is probably simpler, but might be more limiting in terms of future growth. However, students can choose whichever deployment process s/he prefers as long as the web application is hosted and accessible by the instructor via a web browser with an Internet connection. This can include deployment services outside of Heroku.
