@@ -17,8 +17,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Install Dependency Step
-        run: ./scripts/install_dependencies.sh
+      #- name: Install Dependency Step
+      #  run: ./scripts/install_dependencies.sh
       - name: Build Step
         run: ./scripts/build_app.sh
         env:
