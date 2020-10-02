@@ -5,7 +5,7 @@ gem 'therubyracer'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "github-pages", '~>202'
+  gem "github-pages", '~>208'
   gem "jekyll-haml"
 end
 
