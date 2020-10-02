@@ -1,4 +1,4 @@
-name: Linter-Action
+name: Linter-Workflow
 
 # Run this workflow every time a new commit pushed to your repository
 on: push
@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
 
       # Runs the Super-Linter action
-      - name: Run Linter-Action
+      - name: Run Super-Linter Action
         uses: github/super-linter@v3
         env:
           DEFAULT_BRANCH: master
