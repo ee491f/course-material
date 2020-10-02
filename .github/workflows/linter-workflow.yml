@@ -22,5 +22,5 @@ jobs:
       - name: Build Step
         run: ./scripts/build_app.sh
         env:
-          PAGES_REPO_NWO: ${{ GITHUB_REPOSITORY }}
+          PAGES_REPO_NWO: ${{ github['repository'] }}
 
