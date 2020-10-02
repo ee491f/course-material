@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -qq -y \
   shellcheck
 
 COPY Gemfile* /usr/src/app/
-RUN bundle
+COPY scripts/install_dependencies.sh /usr/src/app/scripts/install_dependencies.sh
+RUN scripts/install_dependencies.sh
 
 COPY . /usr/src/app/
