@@ -4,4 +4,4 @@
 
 JEKYLL_ENV=production \
 bundle exec jekyll build \
-  --config $JEKYLL_CONFIG_FILES
+  --config "$JEKYLL_CONFIG_FILES"

@@ -6,7 +6,7 @@
 #
 # example usage: teardown_containers
 teardown_containers() {
-  local environment=$1
+  environment=$1
 
   case $environment in
     'development')
@@ -21,7 +21,7 @@ teardown_containers() {
 #
 # example usage: setup_containers
 setup_containers() {
-  local environment=$1
+  environment=$1
 
   case $environment in
     'development')
