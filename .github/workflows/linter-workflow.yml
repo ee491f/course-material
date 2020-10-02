@@ -17,9 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Runs the Super-Linter action
-      - name: Run Super-Linter Action
-        uses: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Runs customer linter action
+      - name: Run Custom Linter Action
+        run: ./scripts/lint_app.sh
+
