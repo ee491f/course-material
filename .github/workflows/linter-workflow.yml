@@ -21,4 +21,6 @@ jobs:
         run: ./scripts/install_dependencies.sh
       - name: Build Step
         run: ./scripts/build_app.sh
+        env:
+          PAGES_REPO_NWO: ${{ GITHUB_REPOSITORY }}
 
