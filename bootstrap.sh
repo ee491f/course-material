@@ -33,6 +33,6 @@ case $ENV in
     echo "Clearing out old containers"
     teardown_containers "$ENV"
     echo "Setting up $ENV containers"
-    setup_containers "$ENV"
+    setup_containers $ENV
   ;;
 esac
