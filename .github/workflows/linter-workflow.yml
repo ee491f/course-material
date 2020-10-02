@@ -8,6 +8,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Run Custom Linter Action
+      - name: Run Linter Action
         run: ./scripts/lint_app.sh
+  build-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run Build Action
+        run: ./scripts/build_app.sh
 
