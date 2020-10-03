@@ -15,11 +15,11 @@ jobs:
     container:
       image: ruby:2.5.3
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v2
-      - name: Install Dependency Step
+      - name: Install Dependency
         run: ./scripts/install_dependencies.sh
-      - name: Build Step
+      - name: Build Site
         run: ./scripts/build_app.sh
         env:
           PAGES_REPO_NWO: ${{ github['repository'] }}
