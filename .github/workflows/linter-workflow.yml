@@ -39,8 +39,8 @@ jobs:
         with:
           tag_name: ${{ github.run_id }}
           release_name: Release ${{ github.run_id }}
-          draft: false
-          #prerelease: false
+          #draft: false
+          prerelease: false
       - name: Zip Artifact
         uses: montudor/action-zip@v0.1.0
         with:
