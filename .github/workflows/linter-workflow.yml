@@ -7,14 +7,14 @@ env:
 
 jobs:
   lint-job:
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Lint Application
         run: scripts/lint_app.sh
   build-job:
-    #runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     container:
       image: ruby:2.5.3
     steps:
