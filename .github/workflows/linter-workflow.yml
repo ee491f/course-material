@@ -29,6 +29,9 @@ jobs:
         with:
           name: Site
           path: docs/
+  deploy-job:
+    runs-on: ubuntu-latest
+    steps:
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
