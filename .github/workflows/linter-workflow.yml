@@ -9,7 +9,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Lint Application
-        run: ./scripts/lint_app.sh
+        run: scripts/lint_app.sh
   build-job:
     runs-on: ubuntu-latest
     container:
@@ -18,14 +18,12 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Install Dependency
-        run: ./scripts/install_dependencies.sh
+        run: scripts/install_dependencies.sh
       - name: Build Site
-        run: ./scripts/build_app.sh
+        run: scripts/build_app.sh
         env:
           PAGES_REPO_NWO: ${{ github['repository'] }}
           LC_ALL: C.UTF-8
-          LANG: en_US.UTF-8
-          LANGUAGE: en_US.UTF-8
       - name: Upload Site to Actions
         uses: actions/upload-artifact@v2
         with:
@@ -39,8 +37,6 @@ jobs:
         with:
           tag_name: ${{ github.run_id }}
           release_name: Release ${{ github.run_id }}
-          draft: false
-          prerelease: false
       - name: Zip Artifact
         uses: montudor/action-zip@v0.1.0
         with:
