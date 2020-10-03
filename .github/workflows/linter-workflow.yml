@@ -40,6 +40,12 @@ jobs:
         with:
           tag_name: ${{ github.run_id }}
           release_name: Release ${{ github.run_id }}
+      - name: Download Site from Actions
+        uses: actions/download-artifact@v2
+        with:
+          name: Site
+      - name: Troubleshoot-ls
+        run: ls -la
       - name: Zip Artifact
         uses: montudor/action-zip@v0.1.0
         with:
