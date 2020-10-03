@@ -26,10 +26,10 @@ jobs:
           LC_ALL: C.UTF-8
           LANG: en_US.UTF-8
           LANGUAGE: en_US.UTF-8
-      - name: Upload Build Artifact
+      - name: Upload Site to Actions
         uses: actions/upload-artifact@v2
         with:
-          name: Packaged Site
+          name: Site
           path: docs/
       - name: Create Release
         id: create_release
@@ -41,9 +41,7 @@ jobs:
           release_name: Release x
           draft: false
           prerelease: false
-      - name: Zip Artifact
-        run: zip -r site.zip docs/
-      - name: Upload Release Asset
+      - name: Upload Site to Releases
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
