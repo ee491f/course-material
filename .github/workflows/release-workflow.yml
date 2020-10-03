@@ -2,7 +2,7 @@ name: Workflow
 
 on: push
 env:
-  site_path: docs/
+  site_path: _site/
   zip_filename: site.zip
 
 jobs:
