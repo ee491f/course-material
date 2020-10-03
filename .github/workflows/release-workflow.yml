@@ -27,7 +27,6 @@ jobs:
         env:
           PAGES_REPO_NWO: ${{ github['repository'] }}
           LC_ALL: C.UTF-8
-          JEKYLL_CONFIG_FILES: _config.yml,_config.development.yml
       - name: Upload Site to Actions
         uses: actions/upload-artifact@v2
         with:
