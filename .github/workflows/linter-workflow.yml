@@ -9,7 +9,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Run Linter Action
-        run: ./scripts/lint_app.sh
+        run: scripts/lint_app.sh
   build-job:
     runs-on: ubuntu-latest
     container:
@@ -23,7 +23,7 @@ jobs:
         run: ./scripts/build_app.sh
         env:
           PAGES_REPO_NWO: ${{ github['repository'] }}
-          #LC_ALL: C.UTF-8
+          LC_ALL: C.UTF-8
           LANG: en_US.UTF-8
           LANGUAGE: en_US.UTF-8
       - name: Upload Site to Actions
