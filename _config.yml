@@ -33,8 +33,7 @@ exclude:
   - docker-compose.yml
   - bootstrap.sh
   - scripts
-  #- docker # not sure why excluding this folder causes auto-regeneration to fail
-destination: docs
+  - docker
 
 defaults:
   - values:

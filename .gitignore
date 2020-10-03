@@ -1,5 +1,3 @@
 .sass-cache
 .jekyll-metadata
-# needed because auto-regenerate cannot work with docker excluded in _config.yml
-# remove when docker folder can be excluded directly from _config.yml
-docs/docker/
+_site/
