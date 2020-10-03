@@ -6,7 +6,7 @@ jobs:
   lint-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v2
       - name: Run Linter Action
         run: ./scripts/lint_app.sh
