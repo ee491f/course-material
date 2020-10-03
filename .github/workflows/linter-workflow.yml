@@ -20,7 +20,7 @@ jobs:
       - name: Install Dependency
         run: ./scripts/install_dependencies.sh
       - name: Build Site
-        run: scripts/build_app.sh
+        run: ./scripts/build_app.sh
         env:
           PAGES_REPO_NWO: ${{ github['repository'] }}
           LC_ALL: C.UTF-8
@@ -52,7 +52,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./site.zip
+          asset_path: site.zip
           asset_name: site.zip
           asset_content_type: application/zip
 
