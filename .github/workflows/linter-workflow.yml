@@ -37,8 +37,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: x
-          release_name: Release x
+          tag_name: ${{ github.run_id }}
+          release_name: Release ${{ github.run_id }}
           draft: false
           prerelease: false
       - name: Zip Artifact
