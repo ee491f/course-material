@@ -1,0 +1,66 @@
+name: Workflow
+
+on: push
+env:
+  site_path: docs/
+  zip_filename: site.zip
+
+jobs:
+  lint-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Lint Application
+        run: scripts/lint_app.sh
+  build-job:
+    runs-on: ubuntu-latest
+    container:
+      image: ruby:2.5.3
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Install Dependency
+        run: scripts/install_dependencies.sh
+      - name: Build Site
+        run: scripts/build_app.sh
+        env:
+          PAGES_REPO_NWO: ${{ github['repository'] }}
+          LC_ALL: C.UTF-8
+      - name: Upload Site to Actions
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.zip_filename }}
+          path: ${{ env.site_path }}
+  deploy-job:
+    runs-on: ubuntu-latest
+    needs: build-job
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+      - name: Download Site from Actions
+        uses: actions/download-artifact@v2
+        with:
+          name: ${{ env.zip_filename }}
+          path: ${{ env.site_path }}
+      - name: Zip Artifact
+        uses: montudor/action-zip@v0.1.0
+        with:
+          args: zip -r ${{ env.zip_filename }} ${{ env.site_path }}
+      - name: Upload Site to Releases
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ env.zip_filename }}
+          asset_name: ${{ env.zip_filename }}
+          asset_content_type: application/zip
+

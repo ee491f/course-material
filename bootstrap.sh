@@ -6,6 +6,7 @@ set -e
 
 ### define functions
 SRC_DIR=$(cd "$(dirname "$0")"; pwd -P)
+# shellcheck source=scripts/functions.sh
 . "$SRC_DIR"/scripts/functions.sh
 
 set_defaults() {
