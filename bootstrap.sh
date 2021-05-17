@@ -14,12 +14,14 @@ set_defaults() {
 }
 
 gather_options() {
-  while getopts "3:" OPT; do
-    case $OPT in
-      e)
-        ENV=$OPTARG
+  while [ "$1" != "" ]; do
+    case $1 in
+      -e)
+        ENV=$2
+        shift
       ;;
     esac
+    shift
   done
 }
 
