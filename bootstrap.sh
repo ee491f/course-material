@@ -9,10 +9,21 @@ SRC_DIR=$(cd "$(dirname "$0")"; pwd -P)
 # shellcheck source=scripts/functions.sh
 . "$SRC_DIR"/scripts/functions.sh
 
+# set_defaults
+#
+# sets up the defaults to be used later
+#
+# example usage: set_defaults
 set_defaults() {
   ENV=development
 }
 
+# gather_options
+#
+# gathers the options provided by the user
+# based off of http://linuxcommand.org/lc3_wss0120.php
+#
+# example usage: gather_options "$@"
 gather_options() {
   while [ "$1" != "" ]; do
     case $1 in
@@ -24,7 +35,6 @@ gather_options() {
     shift
   done
 }
-
 ### define functions:end
 
 set_defaults
