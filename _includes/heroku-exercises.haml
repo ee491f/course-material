@@ -4,30 +4,35 @@
     For these exercises, we will practice using Heroku's deployment and hosting service.
 
   %p
-    Follow the Heroku's documentation&nbsp;
-    = succeed ' ' do
-      %a{href: 'https://devcenter.heroku.com/'} here
+    Follow&nbsp;
+    %a{href: 'https://devcenter.heroku.com/'} Heroku's tutorials&nbsp;
     to:
   %ul
     %li
-      %a{href: 'https://signup.heroku.com/dc'} create a free account
+      %a{href: 'https://signup.heroku.com/'} create a free account
     %li
       %a{href: 'https://devcenter.heroku.com/articles/heroku-cli'} install their command line interface (cli)
     %li
-      %a{href: 'https://devcenter.heroku.com/articles/git'} understand the Git workflow you need to follow to use their service
-    %li
-      %a{href: 'https://devcenter.heroku.com/articles/getting-started-with-python'} deploy Heroku's sample django application
-    %li
-      %a{href: 'https://devcenter.heroku.com/articles/container-registry-and-runtime'} deploy an application container
-  
+      %a{href: 'https://devcenter.heroku.com/articles/container-registry-and-runtime'} deploy your Django application container
+
   %p
     There are multiple ways to&nbsp;
     = succeed ' ' do
       %a{href: 'https://devcenter.heroku.com/categories/deployment'} deploy
-    an application to Heroku. After completing these exercises, you have learned to deploy using Heroku's&nbsp;
-    %a{href: 'https://devcenter.heroku.com/categories/deploying-with-git'} Git/Buildpack
-    &nbsp;and&nbsp;
+    an application to Heroku. After completing the above exercises, you have learned to deploy using Heroku's&nbsp;
     %a{href: 'https://devcenter.heroku.com/categories/deploying-with-docker'} Docker/container
     &nbsp;method.
+
+  %p
+    If you extra time and would like to go beyond the scope of this course, go through the other way of deploying on Heroku, using Heroku's Python buildpack via Git:
+  %ul
+    %li
+      %a{href: 'https://devcenter.heroku.com/articles/git'} understand the Git workflow you need to follow to use their service
+    %li
+      %a{href: 'https://devcenter.heroku.com/categories/deploying-with-git'} Git/Buildpack
+    %li
+      %a{href: 'https://devcenter.heroku.com/articles/getting-started-with-python'} deploy Heroku's sample django application
+
   %p The recommended deployment approach for this class is to use the Docker container method. The reason is because the industry as a whole is moving towards using containers and learning this approach will be more beneficial to you in the long run. However, whichever method you use will have no effect on your course grade.
-  %p The main objective is to be able to consistently and repeatably deploy your application so your users, which in this course, will be the instructor and possibly a few of your classmates, can access the latest version of your application.
+  %p The main objective is to be able to consistently and repeatably deploy your application so your users, which in this course will be the instructor and possibly a few of your classmates, can access the latest version of your application.
+
