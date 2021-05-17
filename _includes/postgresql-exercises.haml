@@ -13,37 +13,39 @@
     Django's ORM will translate your application Python code into SQL commands that PostgreSQL will understand.
 
   %p
-    Follow the PostgreSQL tutorials&nbsp;
-    = succeed ' ' do
-      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-sql.html'} here
-    to learn how to:
+    Go through the&nbsp;
+    %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-sql.html'} PostgreSQL tutorials
+    &nbsp;using the&nbsp;
+    %a{href: 'https://medium.com/analytics-vidhya/getting-started-with-postgresql-using-docker-compose-34d6b808c47c?sk=493359a3d372f1788733a9b0374d779d'} "Getting Started with PostgreSQL using Docker-Compose" tutorial
+    's PostgreSQL database container
+    &nbsp;to learn how to:
   %ul
     %li
       %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-table.html'} create a table
     %li
-      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-populate.html'} add data to a table (aka insert)
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-populate.html'} add data to a table
+      &nbsp;(aka insert)
     %li
-      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-select.html'} search a table for data (aka query, select)
+      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-select.html'} search a table for data
+      &nbsp;(aka query, select)
     %li
       %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-update.html'} update data in a table
     %li
       %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-delete.html'} delete data in a table
     %li
       %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-join.html'} join data across tables
-  %p
-    You can use the PostgreSQL database in container from this&nbsp;
-    %a{href: 'https://medium.com/analytics-vidhya/getting-started-with-postgresql-using-docker-compose-34d6b808c47c'} tutorial
-    &nbsp;to practice the above commands.
 
   %p
-    Our end-goal is to create Django application so it is best to know how to use a database by leveraging the Django framework.&nbsp;
-    Follow this Django tutorial&nbsp;
-    = succeed ' ' do
-      %a{href: 'https://www.postgresql.org/docs/devel/static/tutorial-sql.html'} here
-    to learn how to:
+    Our end-goal is to create a Django application so it is best to know how to use a database by leveraging the Django framework.&nbsp;
+    Go through the&nbsp;
+    %a{href: 'https://tutorial.djangogirls.org/en/django_models/'} Django Girls tutorials
+    &nbsp;using the&nbsp;
+    %a{href: 'https://medium.com/analytics-vidhya/an-example-django-project-in-containers-cc29121df310?sk=64d84594e93870c766548f79791db8bf'} "An Example Django Project in Containers" tutorial
+    's Django application 
+    &nbsp;to learn how to:
   %ul
     %li
-      %a{href: 'https://tutorial.djangogirls.org/en/django_models/#creating-a-blog-post-model'} creata a model
+      %a{href: 'https://tutorial.djangogirls.org/en/django_models/#creating-a-blog-post-model'} create a model
       &nbsp;(Section "Creating a blog post model")
     %li
       %a{href: 'https://tutorial.djangogirls.org/en/django_models/#create-tables-for-models-in-your-database'} create/run migrations to support a model
@@ -59,10 +61,7 @@
       &nbsp;(Sections "Filter objects", "Ordering objects", and "Complex queries through method-chaining")
 
   %p
-    You can use the Django application from this&nbsp;
-    %a{href: 'https://medium.com/@zhao.li/an-example-django-project-in-containers-cc29121df310'} tutorial
-    &nbsp;to pratice the above Django model features.&nbsp;
-    As a note, Django defaults to using the SQLite3 database if it is not configured to use any particular database, like PostgreSQL.&nbsp;
+    Note: Django defaults to using the SQLite3 database if it is not configured to use any particular database, like PostgreSQL.&nbsp;
     But the ORM handles all of that transparently to the developer, so it doesn't really matter which database we're using for this particular exercise as long as we are using the ORM to interact with it.
 
   %p
