@@ -17,15 +17,11 @@
     With these two tools, we can control our application and its environment. Being able to control your application and its environment allows any developer, teammate, or instructor to pull up your project on their own development environment. This can be useful if you need help troubleshooting or to get feedback on a feature you are developing. Having the application and its environment controlled avoids the age-old problem of "
     = succeed '".' do
       %a{href: 'https://www.leadingagile.com/2017/03/works-on-my-machine/'} it works on my machine
-  %p
-    %a{href: '#git'} Git
-    &nbsp;can be installed on any operating system, but&nbsp;
-    %a{href: '#containers'} docker containers
-    &nbsp;has more support for Linux based operating systems.&nbsp;
-    %a{href: 'https://www.hanselman.com/blog/DockerAndLinuxContainersOnWindowsWithOrWithoutHyperVVirtualMachines.aspx'} Windows support
-    &nbsp;is growing, but until containers on Windows and Linux works seamlessly together, this course will use Linux containers for grading.
+
   %h3 Development Environment Recommendations
-  %p You can set up your development environment anyway you choose as long as it supports Git and containers. If you do not have a preference, then the following recommendations are good starting points:
+  %p
+    You can set up your development environment anyway you choose as long as it supports Git and containers.&nbsp;
+    If you do not have a preference, then the following recommendations are good starting points:
   %ul
     %li
       %p
@@ -37,13 +33,26 @@
         Mac Operating System: containers can run on Apple deskop and laptops with&nbsp;
         = succeed '.' do
           %a{href: 'https://www.docker.com/docker-mac'} Docker for Mac
-        &nbsp;This is the setup I work with on a day-to-day basic, so it will be the easiest for me to lend a hand with this setup.
+        &nbsp;This is the setup I work with on a day-to-day basis, so it will be the easiest for me to lend a hand with this setup.
     %li
       %p
-        Windows Operating System: there is a&nbsp;
+        Windows Operating System: containers can run on Windows deskop and laptops with&nbsp;
         %a{href: 'https://www.docker.com/docker-windows'} Docker for Windows
-        , but my experience with it is limited. My recommendation is to install&nbsp;
+        , but I do not use it on a day-to-day basis.&nbsp;
+        However, I have tried it out and helped my co-workers with it at a minimal level, so I can help with some parts of this set up.
+        %br/
+        Installing Docker for Windows is not as straight forward as the Linux/Mac setup.&nbsp;
+        %br/
+        These guides should help:
+        %ul
+          %li
+            Installing Docker for Windows:&nbsp;
+            %a{href: 'https://docs.docker.com/docker-for-windows/install/'} https://docs.docker.com/docker-for-windows/install/
+          %li
+            Installing Docker for Windows' dependency, WSL2:&nbsp;
+            %a{href: 'https://docs.docker.com/docker-for-windows/wsl/'} https://docs.docker.com/docker-for-windows/wsl/ 
+        If you cannot get Docker for Windows working, then you also have the option of installing&nbsp;
         %a{href: 'https://www.ubuntu.com/'} Ubuntu
         &nbsp;as a virtual machine inside your Windows machine. You can use&nbsp;
         %a{href: 'https://www.virtualbox.org/wiki/Downloads'} Virtual Box
-        &nbsp;to manage the Ubuntu virtual machine. To summarize, your host machine will be Windows and your guest virtual machine will be Ubuntu.
+        &nbsp;to manage the Ubuntu virtual machine. To summarize the alternative option: your host machine will be Windows and your guest virtual machine will be Ubuntu.
