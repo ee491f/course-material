@@ -1,4 +1,3 @@
-# EE491F Data Driven Web Development
 [EE491F Course Webpage](https://ee491f.github.io/course-material/ "EE491F Course Webpage")
 
 Getting Started
