@@ -13,7 +13,8 @@ ENV LANGUAGE en_US.UTF-8
 # end: delete this locales workaround when possible
 
 RUN apt-get update && apt-get install -qq -y \
-  shellcheck
+    shellcheck \
+  && rm -rf /var/lib/apt/lists/*
 
 COPY Gemfile* /usr/src/app/
 COPY scripts/install_dependencies.sh /usr/src/app/scripts/install_dependencies.sh
