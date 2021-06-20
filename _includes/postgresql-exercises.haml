@@ -37,28 +37,61 @@
 
   %p
     Our end-goal is to create a Django application so it is best to know how to use a database by leveraging the Django framework.&nbsp;
-    Go through the&nbsp;
+    Reference the&nbsp;
     %a{href: 'https://tutorial.djangogirls.org/en/django_models/'} Django Girls tutorials
-    &nbsp;using the&nbsp;
-    %a{href: 'https://medium.com/analytics-vidhya/an-example-django-project-in-containers-cc29121df310?sk=64d84594e93870c766548f79791db8bf'} "An Example Django Project in Containers" tutorial
-    's Django application 
-    &nbsp;to learn how to:
+    &nbsp;to add their Blog's&nbsp;
+    %code Post
+    &nbsp;model to a Django applicaion.&nbsp;
+    You can modify any of the previous Django applications you have built or modified to accomplish this.
+  %p
+    For example you can use any of the following Django applications as the starting point for this exercise:
   %ul
     %li
-      %a{href: 'https://tutorial.djangogirls.org/en/django_models/#creating-a-blog-post-model'} create a model
+      The Django application from the&nbsp;
+      %a{href: 'https://medium.com/analytics-vidhya/an-example-django-project-in-containers-cc29121df310?sk=64d84594e93870c766548f79791db8bf'} "An Example Django Project in Containers"
+      &nbsp;tutorial
+    %li
+      The modified Django application from the&nbsp;
+      %a{href: '#django-exercises'} Django Exercises
+    %li
+      The new Django application from the&nbsp;
+      %a{href: '#django-exercises'} Django Exercises
+
+  %p
+    Make the following modifications to your Django application:
+  %ul
+    %li
+      Update the Django application to have a Blog app with a&nbsp;
+      %a{href: 'https://tutorial.djangogirls.org/en/django_models/#creating-a-blog-post-model'} Post model
       &nbsp;(Section "Creating a blog post model")
     %li
-      %a{href: 'https://tutorial.djangogirls.org/en/django_models/#create-tables-for-models-in-your-database'} create/run migrations to support a model
+      %a{href: 'https://tutorial.djangogirls.org/en/django_models/#create-tables-for-models-in-your-database'} Create and run migrations
       &nbsp;(Section "Create tables for models in your database")
+      &nbsp;to support the new&nbsp;
+      %code Post
+      &nbsp;model
     %li
-      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#all-objects'} use a model to fetch data
-      &nbsp;(Section "All objects")
+      Add the pages to allow all of the CRUD operations for the Post model (e.g.&nbsp;
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#create-object'} creating a post
+      &nbsp;[Section "Create object"],
+      &nbsp;
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#all-objects'} reading posts
+      &nbsp;[Section "All objects"], etc.)
     %li
-      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#create-object'} use a model to create data
-      &nbsp;(Section "Create object")
+      Add a page that displays a&nbsp;
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#filter-objects'} filtered list of posts
+      &nbsp;(Section "Filter objects"),&nbsp;
+      e.g. all posts by a specific author, all posts with a keyword in its title, all published posts, all posts published within some timeframe, etc.
     %li
-      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#filter-objects'} use a model to do a more advanced search on the data
-      &nbsp;(Sections "Filter objects", "Ordering objects", and "Complex queries through method-chaining")
+      Add a page that displays an&nbsp;
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#ordering-objects'} ordered list of posts
+      &nbsp;(Section "Ordering objects"),&nbsp;
+      e.g. posts listed in ascending or descending order based on its title, author, published date, or some other attribute
+    %li
+      Add a page that displays a&nbsp;
+      %a{href: 'https://tutorial.djangogirls.org/en/django_orm/#complex-queries-through-method-chaining'} filtered and ordered list of posts
+      &nbsp;(Section "Complex queries through method-chaining"),&nbsp;
+      e.g. posts filtered by title and ordered by author, filtered by author and ordered by published date, etc.
 
   %p
     Note: Django defaults to using the SQLite3 database if it is not configured to use any particular database, like PostgreSQL.&nbsp;
