@@ -16,7 +16,7 @@ jobs:
   build-job:
     runs-on: ubuntu-latest
     container:
-      image: ruby:2.5.3
+      image: ruby:2.7.3
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
