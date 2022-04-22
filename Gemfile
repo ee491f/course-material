@@ -3,7 +3,7 @@ ruby RUBY_VERSION
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "github-pages", '~>215'
+  gem "github-pages", '~>226'
   gem "jekyll-haml"
 end
 
