@@ -74,7 +74,12 @@
         %td User Interface (easy to navigate, aesthetically pleasing, navigation with menu and links flow cohesively, etc.)
         %td 10
       %tr
-        %td Demonstration Video (explains why this application is needed, what this application does, and how it is used)
+        %td
+          Demonstration Video (explains why this application is needed, what this application does, and how it is used)
+          %ul
+            %li This requirement is graded from the demonstration video URL as it cannot be verified using the Heroku URL.
+            %li Someone should be speaking in the video; the video should not be silent with text
+            %li The intent is for the video to be a sales pitch to potential customers and/or investors
         %td 10
       %tr
         %td User Accounts (able to create account, log in, and log out)
@@ -82,7 +87,11 @@
       %tr
         %td
           %a{href: 'https://zhao-li.medium.com/general-coding-philosophies-8482df17249b?sk=d332bb0c17803030ec1beb8fcd4ec1bd'} Software Best Practices and Code Metrics
-          &nbsp;(e.g. Test Coverage, Documentation Coverage, Code Style Linting, security scan reporting, static code analysis, etc.)
+          &nbsp;(e.g. Test Coverage, Auto-Documentation Generation, Code Style Linting, security scan reporting, static code analysis, etc.)
+          %ul 
+            %li This requirement is graded from the GitHub URL as it cannot be verified using the Heroku URL.
+            %li The README of the project need to explain how to set up and run linter, generate documentation, etc.
+            %li The linter, documentation auto-generator, etc. need to work within containers and not just configured for each developer's IDE, such as VS Code
         %td 5
       %tr
         %td
@@ -93,4 +102,6 @@
       %tr
         %td Total
         %td 100 (+5)
-        
+  %ul
+    %li Grading is performed on the deployed application on Heroku, unless stated otherwise.
+    %li If nothing is deployed, projects will receive 0 points.
