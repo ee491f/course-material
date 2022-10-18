@@ -3,7 +3,10 @@
   %p The following exercise will give you a chance to practice everything you've learned about containers, Docker, and Docker-Compose.
   %ul
     %li
-      Use Docker-Compose to bring up a nginx service and a tomcat service.
+      Use Docker-Compose to bring up a&nbsp;
+      %a{href: 'https://hub.docker.com/_/nginx'} nginx service
+      &nbsp;and an&nbsp;
+      %a{href: 'https://hub.docker.com/_/httpd'} apache httpd service
       %ul
         %li
           Running&nbsp;
@@ -11,9 +14,9 @@
           &nbsp;should bring up both services
         %li A browser on your development machine should be able to see each service's splash screen
         %img.w-25.img-thumbnail{:src => '{{site.img_path}}/nginx_splash_screen.png'}
-        %img.w-25.img-thumbnail{:src => '{{site.img_path}}/tomcat_splash_screen.png'}
+        %img.w-25.img-thumbnail{:src => '{{site.img_path}}/apache_splash_screen.png'}
         %li
           If you are stuck, you can reference this example&nbsp;
           %code docker-compose.yml
           &nbsp;that is one possible solution to our exercise:&nbsp;
-          %a{href: 'https://gist.github.com/zhao-li/09c606ce41a55b450e29c8951dec5654'} an example docker-compose.yml
+          %a{href: 'https://gist.github.com/zhaol/2a338fb15fc2424d74834d8a4b1eee92'} an example docker-compose.yml
